@@ -19,6 +19,7 @@
 
 ## Step 3
 - add responsive rules (min-width)
+- add flexbox
 
 ## Step 4
 - mobile menu
