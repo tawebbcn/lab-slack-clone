@@ -1,0 +1,58 @@
+nav {
+    background-color: white;
+    vertical-align: middle;
+    font-family: Verdana;
+  
+}
+
+nav h1{
+    margin: 0 auto;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    vertical-align: middle;
+    font-family: Verdana;  
+}
+
+h1 p{
+  color: black;
+  float: left;
+  text-decoration: none;
+  font-family: Arial;
+  font-size: 15px;
+    margin: 0 auto;
+}
+
+.header h1{
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+    font-family: Verdana;
+    font-size: 90px;
+}
+
+.header p{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Verdana;
+}
+
+.top-links{
+  display: inline-block;
+  margin: 0 auto;
+}
+  
+.top-links li {
+  display: inline-block;
+}
+
+#s1{
+  float: left;
+  
+}
+
+
+
