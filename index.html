@@ -5,27 +5,31 @@
   <title>Slack clone</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <nav class="navigator">
-    <p><img src="..." alt="logo-img" />slack</p>
-    <img src="..." alt="options-img">
+  <nav class="navigator container">
+    <p class="slack-name"><img src="..." alt="logo-img" /></p>
+    <p class="options"><img src="..." alt="options-img"></p>
   </nav>
 
-  <section class="work-happens">
+  <section class="work-happens container">
     <h1 class="title">Where Work Happens</h1>
     <p class="text">When your team needs to kick off a project, hire a new 
       employee, deploy some code, review a sales contract, finalize 
       next year's budget, measure an A/B test, plan your next office 
       opening, and more, Slack has you covered.</p>
-    <button class="start-btn">GET STARTED</button>
-    <aside class="sign-in">Already using Slack? <a href="..." class="sign-in-btn">Sign in</a></aside>
+    <div class="btn-link container">
+      <button class="start-btn">GET STARTED</button>
+      <aside class="sign-in">Already using Slack? <a href="..." class="sign-in-btn">Sign in</a></aside>
+    </div>
+    
     <img src="..." alt="team-work">
   </section>
 
-  <section class="hub-team-work">
+  <section class="hub-team-work container">
     <h2 class="title">The hub for your team and your work</h2>
     <article class="box">
       <img src="..." alt="chat">
@@ -58,21 +62,25 @@
     <aside class="learn-more-link"><a href="...">Learn more about Slack features</a></aside>
   </section>
 
-  <section class="good-company">
-    <h2 class="title">You're in good company</h2>
-    <p class="text">Millions of people around the world have already made Slack the place where their work happens.</p>
+  <section class="good-company container">
+    <div class="sub-header">
+      <h2 class="title">You're in good company</h2>
+      <p class="text">Millions of people around the world have already made Slack the place where their work happens.</p>
+    </div>
+    
+    
     <article class="box">
       <h4 class="box-subtitle">LVMH/Benefit Cosmetics</h4>
       <h3 class="box-title">Beautifying the world with a wink and smile (and Slack).</h3>
       <img src="..." alt="pictures">
-      <aside class="read">READ STORY<img src="..." alt="options-read"></aside>
+      <aside class="read">READ STORY<img src="..." alt="options-read" class="options-read-img"></aside>
     </article>
 
     <article class="box">
       <h4 class="box-subtitle">John Hopkins Sibling Innovation Hub</h4>
       <h3 class="box-title">Transforming patient care with slack.</h3>
       <img src="..." alt="classroom">
-      <aside class="read">READ STORY<img src="..." alt="options-read"></aside>
+      <aside class="read">READ STORY<img src="..." alt="options-read" class="options-read-img"></aside>
     </article>
 
     <img src="" alt="ticketmaster">
@@ -83,11 +91,14 @@
   </section>
 
   <section class="try-slack">
-    <h2 class="title">Try Slack with your team for free</h2>
-    <button class="start-btn">GET STARTED</button>
+    <div class="try-slack-content">
+      <h2 class="title">Try Slack with your team for free</h2>
+      <button class="start-btn">GET STARTED</button>
+    </div>
+    
   </section>
 
-  <section class="info-links">
+  <section class="info-links container">
     <img src="..." alt="slack-logo">
     
     <article class="box">
