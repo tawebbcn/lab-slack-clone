@@ -1,0 +1,43 @@
+ body {
+  width: 400px;
+  box-sizing: border-box;
+}
+
+.red {
+  background-color: red;
+}
+
+nav {
+  height: 70px;
+}
+
+.nav-pic{
+  width: 125px;
+  height: 58px;
+}
+
+.nav-button{
+  width: 25px;
+  height: 19px;
+  float: right;
+}
+
+.burguer-icon {
+  
+}
+
+.first-section {
+  height: 757px;
+}
+
+.second-section {
+  height: 1325px;
+}
+
+.third-section {
+  height: 1205px;
+}
+
+.fourth-section {
+  height: 256px;
+}
