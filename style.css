@@ -1,0 +1,59 @@
+/* ---- reset ---- */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 7%;
+  font-family: Slack-Averta,appleLogo,sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #5b5e6d;
+}
+
+/* ---- typography ---- */
+
+
+
+/* ---- layout ---- */
+h1 {
+  font-family: Slack-Tiempos, Georgia, 'Times New Roman', serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 42px;
+  color: #323648;
+}
+
+.slack-logo {
+  width: 100px;
+}
+
+#btn-full-width {
+  display: block;
+  width: 100%;
+  margin: 15px 0;
+  padding: 20px 0;
+  background-color: #3f46ad;
+  color: #fff;
+  font-size: 16px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.sign-in {
+  font-size: 14px;
+  text-decoration: none;
+  color: #323648;
+}
+
+#img-teamwork {
+  display: block;
+  width: 70%;
+  margin: 30px auto;
+}

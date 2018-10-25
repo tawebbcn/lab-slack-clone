@@ -5,13 +5,14 @@
   <title>Slack</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="styles/....">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <header>
     <nav class="nav-header" role="navigation">
-      <img src="images/slack-logo.png" alt="slack-logo">
+      <img class="slack-logo" src="images/slack-logo.png" alt="slack-logo">
+      <!--
       <ul>
         <li>
           Why Slack?
@@ -51,29 +52,32 @@
           Pricing        
         </li>
       </ul>
-      <button>Your Workspaces</button> <!-- fix this later -->
+      -->
+      <!-- <button>Your Workspaces</button> --> <!-- fix this later -->
     </nav>
-    <article>
+    <section class="work">
       <h1>Where Work Happens</h1>
       <p>
           When your team needs to kick off a project, hire a new employee, deploy some code,
           review a sales contract, finalize next year's budget, measure an A/B test, 
           plan your next office opening, and more, Slack has you covered.
       </p>
-      <button>GET STARTED</button>
-      <label for="sign-in">Already using Slack?</label>
-      <a id="sign-in" href="#">Sign in.</a>
-    </article>
-    <img src="images/teamwork.png" alt="teamwork">
+      <button id="btn-full-width">GET STARTED</button>
+      <label for="sign-in" class="sign-in">Already using Slack?</label>
+      <a class="sign-in" href="#">Sign in.</a>
+    </section>
+    <img id="img-teamwork" src="images/teamwork.png" alt="teamwork">
   </header>
   
   <main>
-    <section class="section-1">
+    <section class="collaborate">
       <h2>The hub for your team and your work</h2>
+      <!--
       <p>
-          Slack is a place where your team comes together to collaborate, important information can 
-          be found by the right people, and your tools pipe in information when and where you need it.
+        Slack is a place where your team comes together to collaborate, important information can 
+        be found by the right people, and your tools pipe in information when and where you need it.
       </p>
+      -->
       <article class="channels">
         <img src="images/text-balloons.png" alt="text-balloons">
         <h3>Channels</h3>
@@ -109,7 +113,7 @@
       <a href="#">Learn more about Slack features</a>
     </section>
     
-    <section class="section-2">
+    <section class="team">
       <h2>Built for every team</h2>
       <p>
         No matter your job title or department, Slack can help your team work together and get things done.
@@ -124,7 +128,7 @@
       </ul>
     </section>
     
-    <section class="section-3">
+    <section class="companies">
       <h2>You're in good company</h2>
       <p>
         Millions of people around the world have already made Slack the place where their work happens.
@@ -158,12 +162,12 @@
       </ul>
     </section>
     
-    <section class="section-4">
+    <section class="free-trial">
       <h2>Try Slack with your team for free</h2>
       <button>GET STARTED</button>
     </section>
     
-    <section class="section-5">
+    <section class="slack-info">
       <div class="column-1">
         <img src="images/slack-logo-2.png" alt="slack-logo">
       </div>
