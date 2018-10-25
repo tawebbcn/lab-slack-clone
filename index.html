@@ -5,6 +5,7 @@
   <title>Where work happens | Slack</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -16,7 +17,7 @@
     <!--This button should toggle something like a div containing the menu options,
     but I'm frankly not sure how to do it correctly yet-->
     <button class="nav-menu-icon">
-        <img src="/images/menu-button.svg" alt="open menu" class="hamburger-menu" />
+        <i class="fas fa-bars"></i>
     </button>
   </nav>
 
@@ -26,11 +27,12 @@
       <button class="button">
           <a href="#">get slack for ios</a>
       </button>
+      <p>Already using slack? <a href="#">Sign in.</a></p>
   </header>
 
   <div class="main" role="main">
     <section class="team-work container">
-        <img src="https://a.slack-edge.com/43f70/marketing/img/home/home_illo@2x.png" alt="Slack brings all your communication together" />
+        <img class="wholesome" src="https://a.slack-edge.com/43f70/marketing/img/home/home_illo@2x.png" alt="Slack brings all your communication together" />
         <h2>The hub for your team and your work</h2>
         <article class="features">
             <img src="https://a.slack-edge.com/ce89a/marketing/img/features/icons/organized-convos@2x.png" />
@@ -84,7 +86,8 @@
         <img src="https://a.slack-edge.com/c04e5/marketing/img/logos/company/oracle@2x.png" alt="Oracle" class="partner-logo" />
     </section>
     <section class="try-slack">
-        <!--the try-slack class will then have a background-image CSS property-->
+        <!--the try-slack class will then have a background-image CSS property
+        or a background color-->
         <div class="container">
             <h2>Try Slack with your team for free</h2>
             <button class="button-alt">
