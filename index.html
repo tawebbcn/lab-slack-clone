@@ -5,98 +5,27 @@
   <title>Where work happens | Slack</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <nav>
-    <div>
-      <div>
-       <a href="#"><img src="images/slack_rgb.png" alt=""></a>
+  <nav class="container hidden">
+      <div class="left">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewbox="50 0 576 270" width="125" aria-label="Slack" class="c-slacklogo--color svg-replaced" shape-rendering="geometricPrecision"><path fill="#ECB32D" d="M141.8 87.1c-1.9-5.7-8-8.8-13.7-7-5.7 1.9-8.8 8-7 13.7l28.1 86.4c1.9 5.3 7.7 8.3 13.2 6.7 5.8-1.7 9.3-7.8 7.4-13.4 0-.2-28-86.4-28-86.4z"></path><path fill="#63C1A0" d="M98.3 101.2c-1.9-5.7-8-8.8-13.7-7-5.7 1.9-8.8 8-7 13.7l28.1 86.4c1.9 5.3 7.7 8.3 13.2 6.7 5.8-1.7 9.3-7.8 7.4-13.4 0-.2-28-86.4-28-86.4z"></path><path fill="#E01A59" d="M177.2 158.6c5.7-1.9 8.8-8 7-13.7-1.9-5.7-8-8.8-13.7-7L84 166.1c-5.3 1.9-8.3 7.7-6.7 13.2 1.7 5.8 7.8 9.3 13.4 7.4.2 0 86.5-28.1 86.5-28.1z"></path><path fill="#331433" d="M102 183.1c5.6-1.8 12.9-4.2 20.7-6.7-1.8-5.6-4.2-12.9-6.7-20.7l-20.7 6.7 6.7 20.7z"></path><path fill="#D62027" d="M145.6 168.9c7.8-2.5 15.1-4.9 20.7-6.7-1.8-5.6-4.2-12.9-6.7-20.7l-20.7 6.7 6.7 20.7z"></path><path fill="#89D3DF" d="M163 115.1c5.7-1.9 8.8-8 7-13.7-1.9-5.7-8-8.8-13.7-7l-86.4 28.1c-5.3 1.9-8.3 7.7-6.7 13.2 1.7 5.8 7.8 9.3 13.4 7.4.2 0 86.4-28 86.4-28z"></path><path fill="#258B74" d="M87.9 139.5c5.6-1.8 12.9-4.2 20.7-6.7-2.5-7.8-4.9-15.1-6.7-20.7l-20.7 6.7 6.7 20.7z"></path><path fill="#819C3C" d="M131.4 125.4c7.8-2.5 15.1-4.9 20.7-6.7-2.5-7.8-4.9-15.1-6.7-20.7l-20.7 6.7 6.7 20.7z"></path><path fill="#2D333A" d="M264.8 109.8c3.8 1.7 4.1 2.9 1.1 8.6-3.1 5.8-3.8 6.2-7.6 4.7-4.7-2-10.8-3.5-14.7-3.5-6.4 0-10.6 2.3-10.6 5.8 0 11.5 36.6 5.3 36.6 29.7 0 12.3-10.6 20.5-26.4 20.5-8.3 0-18.6-2.8-25.7-6.4-3.5-1.8-3.8-2.8-.7-8.7 2.6-5.1 3.5-5.7 7.3-4.1 6 2.6 13.7 4.7 18.8 4.7 5.8 0 9.7-2.4 9.7-5.8 0-11.1-37.3-5.8-37.3-29.5 0-12.6 10.5-21 26.2-21 7.6-.1 16.9 2.1 23.3 5zM294.4 80.8V172c0 1.4-1.5 2.8-3.5 2.8h-9.6c-2.1 0-3.5-1.5-3.5-2.8V80.8c0-4.5 1.3-4.9 8.3-4.9 8-.1 8.3.5 8.3 4.9zM362.6 132v39.3c0 2.1-1.5 3.5-3.5 3.5h-9.5c-2.2 0-3.7-1.6-3.5-3.8l.1-4.2c-5.1 5.7-12.5 8.7-19.9 8.7-14.3 0-23.9-8.3-23.9-20.6 0-13.1 10.8-22 27.1-22 6.2 0 11.8 1.1 16.4 3v-4.5c0-7.2-5.7-11.5-15.4-11.5-4.5 0-10.1 1.8-14.5 4.4-3.4 1.9-4.2 1.8-7.9-3.7-3.6-5.5-3.5-6.5 0-8.8 6.7-4.3 15.7-7.1 24-7.1 18.7 0 30.5 10.1 30.5 27.3zm-44.2 22.8c0 4.7 4 7.8 9.9 7.8 7.2 0 13.8-3.5 17.6-9.4v-6.1c-3.8-1.5-8.5-2.3-12.6-2.3-9 0-14.9 4.2-14.9 10zM427.6 109.9c3.5 2 3.6 3.1-.2 9-3.6 5.6-4.2 5.9-8.1 4-2.9-1.5-7.6-2.8-11.4-2.8-12 0-20 7.9-20 19.9 0 12.4 8 20.8 20 20.8 4.2 0 9.4-1.6 12.8-3.5 3.5-2 4.2-1.9 7.9 3.5 3.3 5 3.3 6.2.3 8.3-5.4 3.7-13.8 6.5-21.3 6.5-22.2 0-37.1-14.2-37.1-35.6 0-21.2 14.9-35.3 37.3-35.3 6.8 0 14.8 2.3 19.8 5.2zM500.2 166.2c2.8 3.5 1.7 4.8-5.3 7.3-7.1 2.6-8.1 2.4-10.6-.8l-19.9-26.5-8.9 8.6V172c0 1.4-1.5 2.8-3.5 2.8h-9.6c-2.1 0-3.5-1.5-3.5-2.8V80.8c0-4.5 1.3-4.9 8.3-4.9 8.1 0 8.3.6 8.3 4.9v51.8l27.2-26.1c3-2.8 4.7-2.6 10 .9 5.9 3.8 6.3 4.9 3.5 7.6L476 134.8l24.2 31.4z"></path></svg></a> 
       </div>
-      <ul>
-        <li>Why Slack?</li>
-        <span>
-          <nav>
-            <small>About the Product</small>
-            <div>
-              <a href="#">How it works</a>
-              <a href="#">Security</a>
-              <a href="#">Customers</a>
-              <a href="#">Enterprise</a>
-            </div>
-          </nav>
-        </span>
-        <li>Solutions</li>
-        <span>
-            <nav>
-              <small>Slack for every team</small>
-              <div>
-                <a href="#">Engineering</a>
-                <a href="#">Sales</a>
-                <a href="#">IT</a>
-                <a href="#">Marketing</a>
-                <a href="#">Customer Support</a>
-                <a href="#">Human Resources</a>
-              </div>
-            </nav>
-          </span>      
-        <li>Resources</li>
-        <span>
-            <nav>
-              <small>Go further with Slack</small>
-              <div>
-                <a href="#">Download</a>
-                <a href="#">eBooks & Reports</a>
-                <a href="#">Blog</a>
-                <a href="#">App Directory</a>
-                <a href="#">Help Center</a>
-                <a href="#">API</a>
-              </div>
-            </nav>
-          </span>       
-        <li><a href="#">Pricing</a></li>
-        <li>
-          <button>Your Workspaces</button>
-          <nav>
-            <ul>
-              <li>
-                <a href="#">
-                  <img src="images/ironhack-logo.jpg" alt=""><span>Ironhack</span>
-                </a>
-              </li>
-            </ul>
-            <a href="#">Sign Into Another Workspace</a>
-            <a href="#">Create Workspace</a>
-          </nav>
-        </li>
-      </ul>
-      <button><img src="#" alt=""></button>
-    </div>
+      <div class="menu right">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="17" viewbox="0 0 24 17" aria-label="" class="svg-replaced" shape-rendering="geometricPrecision"><path d="M0 0h24v3H0zm0 7h24v3H0zm0 7h24v3H0z" fill-rule="evenodd"></path></svg></a> 
+      </div>
   </nav>
-
-  <nav>
-    <div>
-      <a href=""><img src="#" alt=""></a>
-      <button><img src="#" alt=""></button>
-    </div>
-    <ul>
-      <li><a href="#"></a>Why Slack?</li>
-      <li><a href="#"></a>Pricing</li>
-      <li><a href="#"></a>About Us</li>
-    </ul>
-    <button>Your Workspaces</button>
-    <a href="#">Download Slack</a>
-  </nav>
-
-  <header>
+  <section class="description container clear">
     <h1>Where Work Happens</h1>
     <p>When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.</p>
     <button>Get Slack for iOS</button>
     <p>Already using Slack?<a href="#">Sign in</a>.</p>
     <img src="images/home_illo.png" alt="">
-  </header>
+  </section>
 
-  <section>
+  <section class="features container">
     <h2>The hub for your team and your work</h2>
     <article>
       <img src="images/organized-convos.png" alt="">
@@ -120,7 +49,7 @@
     <p><a href="#">Learn more about Slack features</a>.</p>
   </section>
 
-  <section>
+  <section class="references container">
     <h2>You're in good company</h2>
     <p>Millions of people around the world have already made Slack the place where their work happens.</p>
     <article>
@@ -137,7 +66,7 @@
     </article>
   </section>
 
-  <section>
+  <section class="companies">
     <div>
       <img src="images/ticketmaster.png" alt="">
       <img src="images/airbnb-alt.png" alt="">
@@ -147,16 +76,16 @@
     </div>
   </section>
 
-  <section>
-    <div>
+  <section class="signup">
+    <div class="container">
       <h3>Try Slack with your team for free</h3>
       <button>Get Slack for iOS</button>
     </div>
   </section>
 
-  <div>
+  <div class="links container">
     <img src="images/Slack_Mark_Web.png" alt="">
-    <div>
+    <div class="company">
       <p>Company</p>
       <a href="#">About Us</a>
       <a href="#">Careers</a>
@@ -164,7 +93,7 @@
       <a href="#">Press</a>
       <a href="#">Brand Guidelines</a>
     </div>
-    <div>
+    <div class="product">
       <p>Product</p>
       <a href="#">Why Slack?</a>
       <a href="#">Enterprise</a>
@@ -172,7 +101,7 @@
       <a href="#">Pricing</a>
       <a href="#">Security</a>
     </div>
-    <div>
+    <div class="resources">
       <p>Resources</p>
       <a href="#">Download</a>
       <a href="#">Help Center</a>
@@ -184,7 +113,7 @@
       <a href="#">Gartner Report</a>
       <a href="#">eBooks</a>
     </div>
-    <div>
+    <div class="extras">
       <p>Extras</p>
       <a href="#">Podcast</a>
       <a href="#">Slack Shop</a>
@@ -193,7 +122,7 @@
     </div>
   </div>
 
-  <footer>
+  <footer class="language-social container">
     <div>
       <ul>
         <li><a href="#"></a>Status</li>
@@ -202,27 +131,11 @@
       </ul>
     </div>
     <ul>
-      <li>
-        <select name="" id="">
-          <option value="de-DE">Deutsch</option>
-          <option value="en-US">English (US)</option>
-          <option value="es-ES">Español</option>
-          <option value="fr-FR">Français</option>
-          <option value="ja-JP">日本語</option>
-        </select>
-        <a href="#">English (US)</a>
-        <ul>
-          <li>Deutsch</li>
-          <li>English (US)</li>
-          <li>Español</li>
-          <li>Français</li>
-          <li>日本語</li>
-        </ul>
-      </li>
-      <li><a href="#"><img src="#" alt=""></a></li>
-      <li><a href="#"><img src="#" alt=""></a></li>
-      <li><a href="#"><img src="#" alt=""></a></li>
-      <li><a href="#"><img src="#" alt=""></a></li>
+      <li><a href="#">English (US)</a></li>
+      <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" version="1" viewbox="0 0 32 32" width="20" height="20" aria-label="Twitter" class="c-nav--footer__svgicon svg-replaced" shape-rendering="geometricPrecision"><path d="M31.993 6.077c-1.177.523-2.44.876-3.77 1.033 1.355-.812 2.396-2.098 2.887-3.63-1.27.75-2.673 1.3-4.168 1.592C25.744 3.797 24.038 3 22.15 3c-3.626 0-6.563 2.938-6.563 6.563 0 .514.057 1.016.17 1.496C10.3 10.783 5.464 8.17 2.227 4.2c-.565.97-.89 2.098-.89 3.3 0 2.28 1.16 4.287 2.92 5.465-1.076-.035-2.088-.33-2.973-.82v.08c0 3.182 2.26 5.835 5.264 6.438-.55.15-1.13.23-1.73.23-.423 0-.833-.04-1.233-.117.834 2.606 3.26 4.504 6.13 4.558-2.245 1.76-5.075 2.81-8.15 2.81-.53 0-1.053-.03-1.566-.09C2.905 27.914 6.355 29 10.062 29c12.072 0 18.675-10 18.675-18.675 0-.284-.008-.568-.02-.85 1.283-.925 2.395-2.08 3.276-3.398z"></path></svg></a></li>
+      <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewbox="0 0 16 16" width="20" aria-label="Facebook" class="c-nav--footer__svgicon svg-replaced" shape-rendering="geometricPrecision"><path d="M15.115 0H.885A.883.883 0 0 0 0 .885v14.23c0 .49.395.885.885.885h7.659V9.803h-2.09v-2.4h2.09V5.62c0-2.069 1.27-3.189 3.104-3.189.875 0 1.643.053 1.867.096v2.155h-1.291c-1.003 0-1.184.469-1.184 1.173v1.547h2.379l-.31 2.4H11.04V16h4.075c.49 0 .885-.395.885-.885V.885A.883.883 0 0 0 15.115 0z" fill-rule="evenodd"></path></svg></a></li>
+      <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" version="1" viewbox="0 0 32 32" width="20" height="20" aria-label="YouTube" class="c-nav--footer__svgicon svg-replaced" shape-rendering="geometricPrecision"><path d="M31.67 9.18s-.312-2.354-1.27-3.39c-1.218-1.358-2.58-1.366-3.206-1.443C22.717 4 16.002 4 16.002 4h-.015s-6.715 0-11.19.347c-.626.077-1.988.085-3.206 1.443C.635 6.826.32 9.18.32 9.18S0 11.94 0 14.7v2.59c0 2.762.32 5.522.32 5.522s.312 2.352 1.27 3.386c1.22 1.358 2.816 1.317 3.528 1.46 2.56.26 10.877.342 10.877.342s6.722-.012 11.2-.355c.624-.08 1.987-.088 3.204-1.446.956-1.036 1.27-3.388 1.27-3.388s.32-2.76.32-5.523V14.7c0-2.76-.32-5.522-.32-5.522z"></path><path fill="#FFF" d="M12 10v12l10-6"></path></svg></a></li>
+      <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewbox="0 0 16 16" width="20" aria-label="LinkedIn" class="c-nav--footer__svgicon svg-replaced" shape-rendering="geometricPrecision"><path d="M14.816 0C15.466 0 16 .512 16 1.152v13.696c0 .63-.533 1.152-1.184 1.152H1.184C.534 16 0 15.477 0 14.848V1.152C0 .512.533 0 1.184 0zM3.563 4.96a1.382 1.382 0 0 0 0-2.763c-.768 0-1.376.619-1.376 1.376 0 .768.608 1.387 1.376 1.387zm10.069 4.49c0-2.058-.437-3.637-2.848-3.637-1.152 0-1.92.63-2.24 1.227h-.032V5.995H6.24v7.637h2.368V9.856c0-.992.181-1.963 1.419-1.963 1.216 0 1.237 1.142 1.237 2.027v3.712h2.368zM2.368 13.633h2.379V5.995H2.368z" fill-rule="evenodd"></path></svg></a></li>
     </ul>
   </footer>
 </body>
