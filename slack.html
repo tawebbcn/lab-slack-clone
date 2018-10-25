@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Slack Clone - Giuia</title>
+  <title>Slack Clone - Giulia</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
  <link rel="stylesheet" href="slack-clone.css">
@@ -11,22 +11,26 @@
 <body>
     <header>
         <nav class="container">
-            <div class="logo">
+            <div class="logo left">
                 <a href="https://slack.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Slack_Technologies_Logo.svg/2000px-Slack_Technologies_Logo.svg.png" style="width:150px;"></a>
             </div>
 
-            <div class="menu container">
-                <button class="nav-button">
+            <div class="menu container right">
+                <button class="nav-button right">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="17" viewBox="0 0 24 17" aria-label="" class="svg-replaced" shape-rendering="geometricPrecision"><path d="M0 0h24v3H0zm0 7h24v3H0zm0 7h24v3H0z" fill-rule="evenodd"></path></svg>
                 </button>
             </div>
         </nav>
     </header>
+
+    <div class="clear">
+
+    </div>
                                             <!--  end of the nav-->
     <main id="main">
-        <header class="header-block container">
+        <header class="container">
             <div>
-                <h1>
+                <h1 class="header-block">
                     Where Work Happens
                 </h1>
                 <p>
@@ -38,7 +42,7 @@
                 <a class="purple-button" href="#">get started</a>  
             
             <div>
-                <p>Already a user? <a href="http://slack.com/signin">Login here</a></p>
+                <p>Already a user? <a href="http://slack.com/signin" class="a-purple">Login here</a></p>
             </div>
             
             <div class="homepage-image">
@@ -87,18 +91,20 @@
             </div>
             
         
-            <article>
+            <article class="card" id="pointer-section">
                 <a href="#">
                     <h3>Something About Beautifying</h3>
                         <img src="https://a.slack-edge.com/d5ae6e/marketing/img/customers/benefit/card_benefit.jpg">
+                        <p class="read-more"><strong>Read more</strong></p>
                 </a>
             </article>
         
 
-            <article>
+            <article class="card" id="pointer-section">
                 <a href="#">
                     <h3>Something About Beautifying</h3>
                         <img src="https://a.slack-edge.com/d5ae6e/marketing/img/customers/hopkins/card_hopkins.jpg">
+                        <p class="read-more"><strong>Read more</strong></p>
                 </a>
             </article>
         </section>
@@ -106,7 +112,9 @@
                                             <!--  end of section YOU ARE IN GOOD COMPANY-->
 
         <section id="partners" class="container">
-            <img src="" alt="logos-banner">
+            
+                <img src="https://logotipogratis.com/blog/wp-content/uploads/2018/01/ejemplo-de-logotipos.gif" alt="logo-banner">
+         
         </section>
 
                                              <!--  end of section PARTNERS-->
@@ -121,14 +129,12 @@
                                                 <!--  end of section FOR FREE-->
 
     <footer>
-        <div>
-            <img>
-        </div>
+      
 
         <div class="footer-list container">
             <p><strong>Company</strong></p>
             <ul>
-                <li><a href="#">About Us</a></li>
+                <li><a href="#" >About Us</a></li>
                 <li><a href="#">Career</a></li>
                 <li><a href="#">Blog</a></li>
             </ul>
@@ -163,13 +169,13 @@
     
 
         <div id="bottom-page" >
-            <ul class="container" id="bottom-page-left">
+            <ul class="container footer-list">
                 <li><a href="#">Status</a></li>
                 <li><a href="#">Privacy</a></li>
                 <li><a href="#">Contact Us</a></li>
             </ul>
 
-            <ul class="container" id="bottom-page-right">
+            <ul class="container footer-list">
                 <li><a href="#">Language Selection</a></li>
                 <li><a href="#">Facebook</a></li>
                 <li><a href="#">Instagram</a></li>

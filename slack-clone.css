@@ -2,45 +2,45 @@
 
 html {
     box-sizing: border-box;
-  }
+}
   *, *:before, *:after {
     box-sizing: inherit;
-  }
+}
   
-  body {
+body {
     margin: 0;
     padding: 0;
     color: #111;
-  }
+}
 
-  nav {
+nav {
       width: 100%;
       padding: 0;
       height: 70px;
       background-color: #fff;
       margin: 20px 0px;
-      position: fixed;
-    }
+    
+}
   
   /* ---- typography ---- */
 body {
     color: #111;
     font-size: 16px;
     line-height: 147%;
-  }
+}
   
-  h1 {
+h1 {
       font-family: 'Slack-Tiempos',Times New Roman,Georgia,serif;
       color:#323648;
       font-size: 38px;
       font-weight: 500;
       line-height: 1.05;
       letter-spacing: normal;
-      text-align: center;
+      text-align:left;
       
-  }
+}
   
-  h2 {
+h2 {
     font-family: 'Slack-Tiempos',Times New Roman,Georgia,serif;
     font-weight: 500;
     line-height: 1.2;
@@ -48,10 +48,10 @@ body {
     font-size: 1.625rem;
     margin-bottom: 1rem;
     color:#323648;
-    text-align: center;
-  }
+    text-align: left;
+}
   
-  h3 {
+h3 {
     font-family: Slack-Tiempos,"Times New Roman",Georgia,serif;
     font-weight: 500;
     line-height: 25px;
@@ -63,74 +63,69 @@ body {
     padding: 20px 0px;
 }
   
-  p {
-    margin: 5px 0px;
+p {
     font-family: 'Slack-Averta',appleLogo,sans-serif;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: normal;
     font-size: 16px;
     color: #5b5e6d;
-  }
+    text-align: left;
+}
   
-  img {
+img {
       max-width: 100%;
-      align-self: center;
+      text-align: center;
       margin-bottom: 10px;
       margin-top:10px;
-  }
+} 
   
 
-  footer {
+footer {
     font-family: 'Slack-Averta',appleLogo,sans-serif;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: normal;
     font-size: 16px;
-    color: #5b5e6d;
-  }
+}
 
 li {
    list-style-type: none;
-   color:#5b5e6d;
 }
 
   /* ---- layout ---- */
   
-  #site-header {
-    padding: 30px 0;
-    color: white;
-    background: #111;
-  }
-  
-  #site-footer {
-    color: white;
-    padding: 60px 0;
-    background: #111;
-  }
-  
-  #site-main {
+.left{
+    float: left;
+}
+
+.right{
+    float:right;
+}
+
+   
+#site-main {
     margin-bottom: 60px;
-  }
+}
   
-  .container {
+.container {
     margin: 0 10px;
-  }
+}
   
-  .section {
+.section {
     margin-bottom: 20px;
     padding-top: 20px;
-  }
+}
   
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
     .container {
       max-width: 728px;
       margin: 0 auto;
     }
-  }
+}
 /* ---- components ---- */
   
-  .purple-button {
+.purple-button {
     background-color: #3f46ad;
     color: #fff;
     border-radius: 4px;
@@ -144,7 +139,7 @@ li {
     text-transform: uppercase;
     font-family: 'Slack-Averta',appleLogo,sans-serif;
     
-  }
+}
 
 .white-button {
     background-color: #ffffff;
@@ -160,19 +155,18 @@ li {
     text-transform: uppercase;
     font-family: 'Slack-Averta',appleLogo,sans-serif;
     
-  }
-
-
-
-  .logo {
+}
+ 
+.logo {
     width: 50%;
     padding: 20px 0px;
-  }
+}
 
-  .menu {
+.menu {
     width: 50%;
     padding: 20px 0px;
-  }
+    position: relative;
+}
 
 .purple-block {
   background-color:#4049AA;
@@ -182,7 +176,6 @@ li {
 #for-free h3 {
   color:white;
 }
-
 
 #for-free button {
   background-color: white;
@@ -197,12 +190,60 @@ li {
   text-align:center;
 }
   
+.header-block {
+  text-align:left;
+  clear: both;
+}
+
+.a-purple {
+  text-decoration: none;
+  color: #4049AA;
+}
+
+#bottom-page {
+  background-color: #F5F5F5;
+}
+
+.card {
+  box-shadow: 0 0 2rem rgba(0,0,0,.1);
+  padding-top: 20px;
+  padding-bottom: 20px;
+ 
+}
+
+.card a:link {
+  text-decoration:none;
+  cursor: pointer;
+}
+
+.read-more {
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
   /* ---- section ---- */
   
-  section.testimonials .button {
+section.testimonials .button {
     margin-bottom: 10px;
-  }
-
-.header-block {
-     position: relative;
 }
+
+.footer-list {
+  padding-top: 20px;
+  padding-bottom:20px;
+}
+
+.footer-list a:link {
+    text-decoration:none;
+    color:#6d6f7b;
+}
+
+.clear {
+    clear: both;
+}
+
