@@ -1,0 +1,151 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 30px;
+  padding: 0;
+}
+
+.navigator-logo img {
+  width: 150px;
+  float:left;
+}
+
+button {
+  border: 0;
+}
+.navigation-button {
+  float: right;
+  width:40px; 
+  height:40px;
+  background: url("images/button.PNG") no-repeat scroll 0 0 transparent;
+  padding-right: 40px; 
+    
+}
+
+.transforma {
+  clear: both;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 34px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+.transforma-text {
+  color: darkgray;
+}
+
+.transforma-bottom {
+  padding-top: 20px;
+}
+
+.transforma-bottom button {
+  width: 100%;
+  height: 40px;
+  background: rgb(66, 108, 183);
+  color: white;
+  size: 20px;
+  font-weight: bold; 
+}
+
+.transforma img {
+  max-width:100%;
+  max-height:100%;
+}
+
+.eje {
+  padding-top: 30px;
+}
+.col-container article {
+  padding-bottom: 30px;
+}
+
+#last-art-eje {
+  padding-bottom: 10px;
+}
+.col p:first-of-type {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom:6px;
+}
+
+.col p:last-child {
+  font-size: 17px;
+  margin-top: 0px;
+}
+
+.col img {
+  max-width: 20%; 
+  max-height:20%;
+}
+
+.eje-footer {
+  margin-top: 0px;
+  border-bottom: 2px solid blue;
+  font-size: 20px;
+  color: blue;
+  text-align: center;
+}
+
+.our-companies {
+  padding-top: 20px;
+}
+
+.companies-container {
+  box-shadow: 0px 0px 34px -5px rgba(163,163,163,1);
+  margin-top: 10px;
+}
+
+.company-header{
+  padding-left: 15px;
+  padding-top: 10px;
+}
+.company-header h3 {
+  font-size: 18px;
+  margin-bottom:2px;
+}
+
+.company-header p {
+  font-size: 25px;
+  margin-top: 0px;
+  font-weight: bold;
+}
+
+.companies-images img {
+  max-width:100%;
+  max-height:100%;
+}
+
+.companies-footer {
+  height: 60px;
+  padding-left: 15px;
+  padding-top: 18px;
+  color: blue;
+  font-weight: bold;
+}
+
+.logos {
+  padding-top: 20px;
+
+}
+
+.prueba-slack {
+  background-color: #3f46ad;;
+  height: 370px;
+  text-align: center;
+}
+
+.prueba-container {
+  margin: 0 auto;
+}
+
