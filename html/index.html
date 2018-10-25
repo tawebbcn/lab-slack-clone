@@ -2,13 +2,17 @@
 <head>
     <title>JackSlack</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
     <body>
     
     <nav>
-        <div class="container"><span><img src="images/logo.png">Slack</i></span>
-            <div class="text-right"><i class="fas fa-bars"></i></div>
-        </div>
+        <div class="logo-section">
+            <img class="logo" src="images/logo.png"></i>
+            <div class="corner"><span class="menu"></span><i class="fas fa-bars menu"></i></div>
+        </div>    
+        
+        
     </nav>
     <section class="side-menu">
         <div class="top-bar">
@@ -23,7 +27,7 @@
 
         </div>
     </section>
-<header>
+<header class="container">
     <h1>Transforma tu forma de trabajar</h1>
     <p>Cuando tu equipo tiene que echar a andar un proyecto, contratar un empleado, subir unas líneas de código, revisar un contrato de ventas, finalizar el presupuesto del próximo año, medir una prueba A/B, planificar la apertura de tu próxima oficina o cualquier otra situación, siempre puedes contar con Slack.</p>
     <button>Consigue slack para android</button>
@@ -31,36 +35,36 @@
 </header>
 
 
-    <section class="team">
+    <section class="team container">
     <h2>El eje que reune a tu equipo y guia tu trabajo</h2>
     <article class="information">
             <img src="images/canales.png" alt="">
-            <p>Canales</p>
+            <p class="sub-header">Canales</p>
             <p>En Slack, los equipos se comunican a través de canales, que puedes organizar por proyectos, temas, departamentos o lo que tenga sentido para ti.</p>
     </article>
     <article class="information">
         <img src="images/busqueda.png" alt="">
-        <p>Busqueda</p>
+        <p class="sub-header">Busqueda</p>
         <p>A través de la búsqueda, todo el mundo pueda acceder a las conversaciones en Slack, por lo que la información siempre está a un clic de distancia.</p>
     </article>
     <article class="information">
         <img src="images/integraciones.png" alt="">
-        <p>Integraciones</p>
+        <p class="sub-header">Integraciones</p>
         <p>Slack es compatible con las herramientas y los servicios que usas a diario. Trae la información que necesitas o ejecuta tareas sin salir de Slack.</p>
     </article>
     <article class="information">
         <img src="images/seguridad.png" alt="">
-        <p>Seguridad</p>
+        <p class="sub-header">Seguridad</p>
         <p>En Slack nos tomamos en serio la seguridad. Ofrecemos medidas como la autenticación de dos factores y el inicio de sesión único para garantizar la seguridad de tus datos y proteger tu organización.</p>
-        <a href="">Mas información sobre las funciones de JackSlack</a>
+        <a href="#" class="consigue-link"></a>Mas información sobre las funciones de JackSlack</a>
     </article>
     </section>
-    <section class="buena-compania">
+    <section class="buena-compania container">
         <h2>Estas en buena comapnia</h2>
         <p>Slack transforma la forma de trabajar de miles de personas en todo el mundo.</p>
         <div class="news-container">
-            <span></span>
-            <h3></h3>
+            <span>LVMH/Benefit Cosmetics</span>
+            <h3>Embelleciendo el mundo con un guiño y una sonrisa (y Slack).</h3>
             <img src="images/not-1.jpg">
             <div class="news-bottom-bar">
                 <span>Leer Historia</span>
@@ -81,12 +85,12 @@
         <div class="companies"></div>
         <div class="download-block">
             <h3 class="download-header"></h3>
-            <button>Consigue slack para android</button>
+            <a href="#" class="download-link">Consigue slack para android</a>
         </div>
     </section>
     <footer>
-        <div class="top-footer">
-        <img src="">
+        <div class="top-footer container">
+        <img src="images/footer-logo.png">
         <ul class="footer-menu">
             <li class="main-menu-item">Conocenos</li>
             <li>Empleos</li>
@@ -124,14 +128,15 @@
                     <li>Estado</li>
                     <li>Privacidad</li>
                     <li>Contactanos</li>
+                </ul>
                 <ul>
-                    <li>Espanol</li>
+                    <li id="language">Espanol</li>
                     <li><i class="fab fa-twitter"></i></li>
                     <li><i class="fab fa-facebook"></i></li>
                     <li><i class="fab fa-youtube"></i></li>
                     <li><i class="fab fa-linkedin"></i></li>
                 </ul>
-                </ul>
+                
             </div>
     </footer>
     </body>
