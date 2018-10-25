@@ -30,13 +30,13 @@ body {
 }
 
 .introduction .button{
-    background-color: blueviolet;
+    background-color: #3f46ad;
     color: white;
 }
 
 .download .button{
     background-color: white;
-    color: blueviolet;
+    color: #1c299d;
 }
 
 img{
@@ -57,7 +57,9 @@ article{
 }
 
 section.download{
-    background-color: blueviolet;
+    background-color: #1c299d;
+    color: white;
+    padding: 70px 0px;
 }
 
 footer>ul>li{
