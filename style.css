@@ -1,3 +1,5 @@
+/*----------RESET----------*/
+
 html {
     box-sizing: border-box;
 }
@@ -11,36 +13,72 @@ body {
     padding: 0;
 }
 
+/*--------TYPOGRAPHY---------*/
 
 .center{
+    width: 100%;
     text-align: center;
 }
+
+h1{
+    font-size: 200%;
+}
+
+h3{
+    padding-left: 3%;
+}
+
+h4{
+    padding-top: 5%;
+    padding-left: 3%;
+}
+
+/*----------LAYOUT----------*/
 
 .container{
     margin: 0 40px;
 }
 
+.section{
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+main{
+    margin-top: 45px;
+}
+
+/*--------COMPONENTS--------*/
+
+/*buttons*/
 .button{
     width: 100%;
     height: 50px;
- 
     border: none;
-
     border-radius: 5px;
+    font-weight: bold;
 }
 
-.introduction .button{
+.introduction-button{
     background-color: #3f46ad;
     color: white;
+    margin: 10% 0px;
 }
 
-.download .button{
+.download-button{
     background-color: white;
     color: #1c299d;
 }
 
+/*imgs*/
 img{
     width: 100%;
+}
+
+nav img{
+    height: 50%;
+    width: auto;
+    margin: 20px 0px;
 }
 
 .characteristics img{
@@ -52,31 +90,17 @@ ul{
     padding: 0;
 }
 
-article{
-    box-shadow: 0px 0px 7px rgb(167, 164, 164);
-}
-
-section.download{
-    background-color: #1c299d;
-    color: white;
-    padding: 70px 0px;
-}
-
 .links>ul>li{
     width: 50%;
     float: left;
 }
 
-footer{
-    clear: both;
-    background-color: #f5f5f5;
+.footer li{
+    display: inline;
+    margin: 0 3%;
 }
 
-nav img{
-    height: 50%;
-    width: auto;
-    margin: 20px 0px;
-}
+/*----------SECTION----------*/
 
 header{
     width: 100%;
@@ -91,6 +115,22 @@ nav{
     height: 100%;
 }
 
-main{
-    margin-top: 65px;
+article{
+    box-shadow: 0px 0px 7px rgb(167, 164, 164);
+}
+
+section.download{
+    background-color: #1c299d;
+    color: white;
+    padding: 70px 0px;
+}
+
+footer{
+    clear: both;
+    background-color: #f5f5f5;
+}
+
+div.footer{
+    margin-bottom: 0;
+    padding-bottom: 10%;
 }
