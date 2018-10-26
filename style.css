@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|PT+Serif:700');
+
 /* ---- reset ---- */
 
 html {
@@ -14,30 +16,226 @@ body {
 
 /* ---- typeografy ---- */
 
+body {
+  color: #111;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  line-height: 147%;
+}
+
+h1 {
+  font-family: 'PT Serif';
+  font-size: 40px;
+  line-height: 38px;
+}
+
+h2 {
+  font-family: 'PT Serif';
+  font-size: 27px;
+  line-height: 30px;
+}
+
+h3 {}
+
+p {
+  margin: 0;
+  font-size: 15px;
+}
+
+/* ---- layout ---- */
+
+#site-navigator {
+  height: 70px;
+  margin-bottom: 20px;
+}
+
+#site-footer {
+  color: white;
+  padding: 60px 0;
+}
+
+#site-main {
+  margin-bottom: 60px;
+}
+
 .container {
   margin: 0 20px;
 }
 
-nav.navigator {
-  height: 65px;
-  width: 100%;
-  clear: both;
-  
+section {
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding: 0 10px;
 }
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 728px;
+    margin: 0 auto;
+  }
+}
+
+
+/* ---- components ---- */
 
 .slack-name {
   float: left;
-  margin-left: 35px;
-  padding: 5px;
+  padding-left: 10px;
+  padding-top: 5px;
 }
 
 .options {
   float: right;
-  margin-right: 30px;
-  padding: 5px;
+  padding-top: 25px;
+  padding-right: 15px;
 }
 
-section.work-happens {
+.start-btn {
+  height: 55px;
+  width: 100%;
+  font-size: 13px;
+  border-radius: 1em;
+  font-weight: bold;
+}
+
+.work-happens .start-btn {
+  background-color: blue;
+  color: white;
+  padding-top: 10px;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.work-happens .text {
+  margin-bottom: 40px;
+}
+
+.sign-in {
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.team-work-img {
+  width: 100%;
+  padding-top: 10px;
+}
+
+.hub-team-work .title {
+  padding-top: 35px;
+  margin-bottom: 20px;
+}
+
+.hub-team-work .box {
+  padding-top: 20px;
+  margin-bottom: 35px;
+}
+
+.title-list {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.learn-more-link {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.good-company .text {
+  margin-bottom: 30px;
+}
+
+.good-company .box {
+  margin-top: 15px;
+  box-shadow: 0px 0px 49px -13px rgba(0,0,0,0.75);
+  /* border: 1px solid black; */
+}
+
+.good-company .box-title {
+  font-size: 24px;
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+
+.good-company .box-subtitle {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-bottom: 5px;
+  padding-top: 40px;
+}
+
+.good-company .box-title,
+.good-company .box-subtitle {
+  padding: 0 50px 0 20px;
+}
+
+.classroom-img,
+.pictures-img {
+  width: 100%;
+}
+
+.read-story-link {
+  text-decoration: none;
+}
+
+.read-story {
+  height: 63px;
+}
+
+.read-story-text {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.read-lines {
+  float: right;
+}
+
+.box-header {
+  padding-top: 10px;
+}
+
+
+/* ---- section ---- */
+
+
+nav.navigator {
+  height: 65px;
+  clear: both;
+}
+
+section.hub-team-work {
+  margin-bottom: 65px;
+}
+
+section.good-company {
+  padding-top: 40px;
+  border-top: 1px solid black;
+  margin-bottom: 70px;
+}
+
+section.collaborating-companies {
+  padding-top: 30px;
+  margin-bottom: 70px;
+}
+
+section.try-slack {
+  background-color: blue;
+  color: white;
+  padding: 50px 35px;
+}
+
+/* section.work-happens {
+  padding: 0 10px;
+} */
+
+
+
+
+/* section.work-happens {
   width: 100%;
 }
 
@@ -58,7 +256,7 @@ section.work-happens {
 .btn-link {
   max-width: 100%;
   margin: 15px 25px;
-}
+} 
 
 .start-btn {
   height: 55px;
@@ -166,3 +364,4 @@ section.info-links {
   padding: 15px 30px;
   float: left;
 }
+*/
