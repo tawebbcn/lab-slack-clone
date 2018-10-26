@@ -60,6 +60,12 @@ p {
   }
   
 /* ---- layout ---- */
+
+nav.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
   
 .container {
     margin: 0 30px;
@@ -82,7 +88,7 @@ section.good-company img {
   }
 
 footer img {
-    width: 30px;
+    width: 2rem;
   }
 
 div.story {
@@ -91,8 +97,10 @@ div.story {
   }
 
 ul.content-info>li {
-
+    list-style: none;
 }
+
+
 
   
 /* ---- components ---- */
