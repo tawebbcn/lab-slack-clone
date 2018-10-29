@@ -17,7 +17,7 @@ body {
 /* ---- typeografy ---- */
 
 body {
-  color: #111;
+  color: #636363;
   font-family: 'Montserrat';
   font-size: 16px;
   line-height: 147%;
@@ -37,6 +37,13 @@ h2 {
 
 h3 {}
 
+h1,
+h2,
+h3,
+h4 {
+  color: #353535;
+}
+
 p {
   margin: 0;
   font-size: 15px;
@@ -50,8 +57,8 @@ p {
 }
 
 #site-footer {
-  color: white;
-  padding: 60px 0;
+  padding: 0;
+  background-color: #F4F4F4;
 }
 
 #site-main {
@@ -78,28 +85,46 @@ section {
 
 /* ---- components ---- */
 
-.slack-name {
-  float: left;
-  padding-left: 10px;
-  padding-top: 5px;
-}
 
-.options {
-  float: right;
-  padding-top: 25px;
-  padding-right: 15px;
-}
 
 .start-btn {
   height: 55px;
   width: 100%;
   font-size: 13px;
-  border-radius: 1em;
+  border-radius: 5px;
   font-weight: bold;
 }
 
+/* ---- section ---- */
+
+
+.navigator {
+  height: 65px;
+  
+}
+
+.top-links {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: white;
+}
+
+.slack-name {
+  padding-left: 30px;
+  padding-top: 5px;
+}
+
+.options {
+  padding-top: 25px;
+  padding-right: 35px;
+}
+
+/* --- work happens --- */
+
 .work-happens .start-btn {
-  background-color: blue;
+  background-color: #3D55DB;
   color: white;
   padding-top: 10px;
   width: 100%;
@@ -118,6 +143,10 @@ section {
 .team-work-img {
   width: 100%;
   padding-top: 10px;
+}
+
+section.hub-team-work {
+  margin-bottom: 65px;
 }
 
 .hub-team-work .title {
@@ -143,14 +172,19 @@ section {
   margin-bottom: 20px;
 }
 
+section.good-company {
+  padding-top: 40px;
+  border-top: 1px solid black;
+  margin-bottom: 70px;
+}
+
 .good-company .text {
   margin-bottom: 30px;
 }
 
 .good-company .box {
   margin-top: 15px;
-  box-shadow: 0px 0px 49px -13px rgba(0,0,0,0.75);
-  /* border: 1px solid black; */
+  box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.25);
 }
 
 .good-company .box-title {
@@ -177,12 +211,18 @@ section {
   width: 100%;
 }
 
-.read-story-link {
-  text-decoration: none;
-}
-
 .read-story {
   height: 63px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-top: 17px;
+  padding-right: 20px;
+}
+
+.read-story-link {
+  text-decoration: none;
+
 }
 
 .read-story-text {
@@ -198,170 +238,118 @@ section {
   padding-top: 10px;
 }
 
-
-/* ---- section ---- */
-
-
-nav.navigator {
-  height: 65px;
-  clear: both;
-}
-
-section.hub-team-work {
-  margin-bottom: 65px;
-}
-
-section.good-company {
-  padding-top: 40px;
-  border-top: 1px solid black;
-  margin-bottom: 70px;
-}
-
 section.collaborating-companies {
   padding-top: 30px;
   margin-bottom: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.companies-logo {
+  width: 50%;
+}
+
+.companies-logo-img {
+  width: 97%;
+  padding: 10px;
 }
 
 section.try-slack {
-  background-color: blue;
+  background-color: #3D55DB;
+  background-image: url(https://a.slack-edge.com/1fd8/spacesuit/source/images/backgrounds/bg_halftone_black_20p@2x.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
   color: white;
-  padding: 50px 35px;
-}
-
-/* section.work-happens {
-  padding: 0 10px;
-} */
-
-
-
-
-/* section.work-happens {
-  width: 100%;
-}
-
-.work-happens .title,
-.work-happens .text {
-  padding: 10px;
-  margin: 15px 25px;
-}
-
-.work-happens .title {
-  font-size: 45px;
-}
-
-.work-happens .text {
-  font-size: 20px;
-}
-
-.btn-link {
-  max-width: 100%;
-  margin: 15px 25px;
-} 
-
-.start-btn {
-  height: 55px;
-  width: 100%;
-  background-color: blue;
-  color: white;
-  font-size: 13px;
-  border-radius: 1em;
-  font-weight: bold;
-}
-
-.sign-in {
-  padding: 10px 1px;
-}
-
-section.hub-team-work {
-  width: 100%;
-}
-
-.hub-team-work .title,
-.hub-team-work .box {
-  padding: 10px;
-  margin: 15px 25px;
-}
-
-.hub-team-work .title {
-  font-size: 30px;
-  margin-top: 30px;
-}
-
-.learn-more-link {
-  text-align: center;
-  padding-bottom: 60px;
-}
-
-section.good-company {
-  width: 100%;
-}
-
-.good-company .sub-header,
-.good-company .box {
-  padding: 10px;
-  margin: 15px 25px;
-}
-
-.good-company .sub-header {
-  text-align: center;
-  width: 75%;
-  margin: 0 auto;
-}
-
-.good-company .title {
-  font-size: 30px;
-}
-
-.good-company .text {
-  font-size: 20px;
-}
-
-.good-company .box {
-  border: 1px solid black;
-  height: 420px;
-  margin: 30px 25px;
-  box-shadow: 15px;
-}
-
-.options-read-img {
-  float: right;
-}
-
-section.try-slack {
-  width: 100%;
-  height: 400px;
-  background-color: blue;
+  padding-top: 50px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 80px;
 }
 
 .try-slack .title {
-  font-size: 30px;
-  color: white;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #F2F2F2;
 }
 
 .try-slack .start-btn {
-  height: 55px;
-  width: 100%;
+  color: #3D55DB;
   background-color: white;
-  color: blue;
-  font-size: 13px;
-  border-radius: 1em;
-  font-weight: bold;
-}
-
-.try-slack-content {
-  padding: 50px;
-  position: relative;
-  top: 50px;
 }
 
 section.info-links {
-  width: 100%;
-  height: 640px;
-  clear: both;
 }
 
-.info-links .box {
-  padding: 15px 30px;
-  float: left;
+.info-links-boxes {
+  display: grid;
+  grid-template-areas:
+    "box box"
+    "box box";
 }
-*/
+
+.slack-logo {
+  margin-bottom: 20px;
+}
+
+.info-links .box ul {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 13px;
+}
+
+.info-links .box li {
+  text-align: left;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.info-links .subtitle {
+  font-size: 15px;
+  color: #636363;
+}
+
+/* --- Footer --- */
+
+.extra-info li{
+  list-style-type: none;
+  padding: 7px;
+}
+
+.extra-info {
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+
+.language {
+  display: block;
+  text-align: center;
+  width: 65%;
+  margin: 10px auto 30px;
+  
+}
+
+.language select {
+  font-family: 'PT Serif';
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.social-media {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.social-media svg {
+  margin: 5px;
+}
+
+
+
+
