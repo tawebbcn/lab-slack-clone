@@ -1,5 +1,4 @@
 /* ---- reset ---- */
-
 html {
     box-sizing: border-box;
 }
@@ -8,23 +7,26 @@ html {
 }
   
 body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    color: #111;
 }
+
 
 nav {
       width: 100%;
       padding: 0;
       height: 70px;
       background-color: #fff;
-      margin: 20px 0px;
-    
+      margin: 0px 0px;    
+     /* Set the navbar to fixed position */
+      top: 0; /* Position the navbar at the top of the page */
+      padding: 20px 0;
+
 }
+
   
   /* ---- typography ---- */
 body {
-    color: #111;
     font-size: 16px;
     line-height: 147%;
 }
@@ -34,7 +36,7 @@ h1 {
       color:#323648;
       font-size: 38px;
       font-weight: 500;
-      line-height: 1.05;
+      line-height: 45px;
       letter-spacing: normal;
       text-align:left;
       
@@ -43,12 +45,12 @@ h1 {
 h2 {
     font-family: 'Slack-Tiempos',Times New Roman,Georgia,serif;
     font-weight: 500;
-    line-height: 1.2;
+    line-height: 34px;
     letter-spacing: normal;
-    font-size: 1.625rem;
-    margin-bottom: 1rem;
+    font-size: 28px;
+    margin-bottom: 20px;
     color:#323648;
-    text-align: left;
+    text-align: center;
 }
   
 h3 {
@@ -56,8 +58,8 @@ h3 {
     font-weight: 500;
     line-height: 25px;
     letter-spacing: normal;
-    font-size: 20px;
-    margin-bottom: 1rem;
+    font-size: 25px;
+    margin-bottom: 20px;
     text-align: center;
     color:#323648;
     padding: 20px 0px;
@@ -66,7 +68,7 @@ h3 {
 p {
     font-family: 'Slack-Averta',appleLogo,sans-serif;
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 25px;
     letter-spacing: normal;
     font-size: 16px;
     color: #5b5e6d;
@@ -75,7 +77,6 @@ p {
   
 img {
       max-width: 100%;
-      text-align: center;
       margin-bottom: 10px;
       margin-top:10px;
 } 
@@ -89,40 +90,89 @@ footer {
     font-size: 16px;
 }
 
-li {
+li,ul {
    list-style-type: none;
+   text-align: left;
+   margin: 0;
+   padding-inline-start: 0px;
+}
+
+li,ul a:link {
+    text-decoration: none;
+    color:#5b5e6d;
+    padding-bottom: 20px;
+ }
+
+
+
+article.card {
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: left;
+    display: flex;
+}
+
+
+
+article img {
+    max-width: 100%;
+    text-align: left;
 }
 
   /* ---- layout ---- */
-  
-.left{
-    float: left;
-}
-
-.right{
-    float:right;
-}
-
-   
+     
 #site-main {
     margin-bottom: 60px;
 }
   
 .container {
-    margin: 0 10px;
+    margin: 0 20px 0 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    width:90%;
 }
   
 .section {
     margin-bottom: 20px;
     padding-top: 20px;
 }
-  
-@media (min-width: 768px) {
+
+
+@media (min-width: 786px) {
     .container {
-      max-width: 728px;
-      margin: 0 auto;
+        max-width: 90%;
+        margin: 0 auto;
     }
 }
+
+@media (max-width: 786px) {
+    .header-block div {
+        width: 100%;
+    }
+    article.card {
+        width: 100%;
+    }
+}
+@media (min-width: 787px) {
+    .header-block div {
+        width: 50%;
+    }
+
+    article.card {
+        width: 46%;
+    }
+    .your-team article {
+        width: 20%;
+    }
+}
+
+.right {
+    float: right;
+}
+
+
 /* ---- components ---- */
   
 .purple-button {
@@ -137,9 +187,9 @@ li {
     margin: 20px 0;
     text-decoration:none;
     text-transform: uppercase;
-    font-family: 'Slack-Averta',appleLogo,sans-serif;
-    
+    font-family: 'Slack-Averta',appleLogo,sans-serif;    
 }
+
 
 .white-button {
     background-color: #ffffff;
@@ -153,25 +203,27 @@ li {
     margin: 20px 0;
     text-decoration:none;
     text-transform: uppercase;
-    font-family: 'Slack-Averta',appleLogo,sans-serif;
-    
+    font-family: 'Slack-Averta',appleLogo,sans-serif;    
 }
- 
+
 .logo {
     width: 50%;
     padding: 20px 0px;
+    float: left;
 }
 
 .menu {
     width: 50%;
     padding: 20px 0px;
     position: relative;
+    float: right;
 }
 
 .purple-block {
   background-color:#4049AA;
   padding: 20px 0;
 }
+
 
 #for-free h3 {
   color:white;
@@ -192,7 +244,6 @@ li {
   
 .header-block {
   text-align:left;
-  clear: both;
 }
 
 .a-purple {
@@ -200,8 +251,45 @@ li {
   color: #4049AA;
 }
 
-#bottom-page {
+.bottom-page {
   background-color: #F5F5F5;
+  padding: 20px 0;
+}
+
+.bottom-left {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+div.bottom-left{
+    width: 50%;
+}
+.bottom-right {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+div.bottom-right{
+    width: 50%;
+}
+
+.bottom-right li {
+    padding-right: 20px;
+}
+
+.bottom-left li {
+    padding-right: 20px;
+}
+
+.semi-bottom-page div{
+    width: 20%;
+    display: flex;
+    align-content: flex-end;
+
 }
 
 .card {
@@ -211,9 +299,10 @@ li {
  
 }
 
-.card a:link {
+#pointer-section a:not(.a-purple){
   text-decoration:none;
   cursor: pointer;
+  color: #3f46ad;
 }
 
 .read-more {
@@ -221,11 +310,48 @@ li {
   text-transform: uppercase;
 }
 
+.main {
+    width: 100%;
+}
 
 
+.two-big-images {
+    width: 50%;
+}
+
+.header-block {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    display: flex;
+}
+/*
+.header-block div {
+    width: 50%;
+}
+*/
 
 
+.your-team {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
+/*
+.your-team article {
+    width: 10%;
+}
+*/
+
+#bottom-page a:not(.a-purple){
+    text-decoration:none;
+    cursor: pointer;
+    color: #3f46ad;
+
+}
 
   /* ---- section ---- */
   
@@ -238,12 +364,11 @@ section.testimonials .button {
   padding-bottom:20px;
 }
 
-.footer-list a:link {
+.footer-list a:not(.a-purple) {
     text-decoration:none;
-    color:#6d6f7b;
+    color: #6d6f7b;
 }
 
 .clear {
     clear: both;
 }
-
