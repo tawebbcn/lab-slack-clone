@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|PT+Serif:700');
+
+/* ---- reset ---- */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* ---- typeografy ---- */
+
+body {
+  color: #636363;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  line-height: 147%;
+}
+
+h1 {
+  font-family: 'PT Serif';
+  font-size: 40px;
+  line-height: 38px;
+}
+
+h2 {
+  font-family: 'PT Serif';
+  font-size: 27px;
+  line-height: 30px;
+}
+
+h3 {}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #353535;
+}
+
+p {
+  margin: 0;
+  font-size: 15px;
+}
+
+/* ---- layout ---- */
+
+#site-navigator {
+  height: 70px;
+  margin-bottom: 20px;
+}
+
+#site-footer {
+  padding: 0;
+  background-color: #F4F4F4;
+}
+
+#site-main {
+  margin-bottom: 60px;
+}
+
+.container {
+  margin: 0 20px;
+}
+
+section {
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding: 0 10px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 728px;
+    margin: 0 auto;
+  }
+}
+
+
+/* ---- components ---- */
+
+
+
+.start-btn {
+  height: 55px;
+  width: 100%;
+  font-size: 13px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* ---- section ---- */
+
+
+.navigator {
+  height: 65px;
+  
+}
+
+.top-links {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: white;
+}
+
+.slack-name {
+  padding-left: 30px;
+  padding-top: 5px;
+}
+
+.options {
+  padding-top: 25px;
+  padding-right: 35px;
+}
+
+/* --- work happens --- */
+
+.work-happens .start-btn {
+  background-color: #3D55DB;
+  color: white;
+  padding-top: 10px;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.work-happens .text {
+  margin-bottom: 40px;
+}
+
+.sign-in {
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.team-work-img {
+  width: 100%;
+  padding-top: 10px;
+}
+
+section.hub-team-work {
+  margin-bottom: 65px;
+}
+
+.hub-team-work .title {
+  padding-top: 35px;
+  margin-bottom: 20px;
+}
+
+.hub-team-work .box {
+  padding-top: 20px;
+  margin-bottom: 35px;
+}
+
+.title-list {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.learn-more-link {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+section.good-company {
+  padding-top: 40px;
+  border-top: 1px solid black;
+  margin-bottom: 70px;
+}
+
+.good-company .text {
+  margin-bottom: 30px;
+}
+
+.good-company .box {
+  margin-top: 15px;
+  box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.25);
+}
+
+.good-company .box-title {
+  font-size: 24px;
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+
+.good-company .box-subtitle {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-bottom: 5px;
+  padding-top: 40px;
+}
+
+.good-company .box-title,
+.good-company .box-subtitle {
+  padding: 0 50px 0 20px;
+}
+
+.classroom-img,
+.pictures-img {
+  width: 100%;
+}
+
+.read-story {
+  height: 63px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-top: 17px;
+  padding-right: 20px;
+}
+
+.read-story-link {
+  text-decoration: none;
+
+}
+
+.read-story-text {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.read-lines {
+  float: right;
+}
+
+.box-header {
+  padding-top: 10px;
+}
+
+section.collaborating-companies {
+  padding-top: 30px;
+  margin-bottom: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.companies-logo {
+  width: 50%;
+}
+
+.companies-logo-img {
+  width: 97%;
+  padding: 10px;
+}
+
+section.try-slack {
+  background-color: #3D55DB;
+  background-image: url(https://a.slack-edge.com/1fd8/spacesuit/source/images/backgrounds/bg_halftone_black_20p@2x.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: white;
+  padding-top: 50px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 80px;
+}
+
+.try-slack .title {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #F2F2F2;
+}
+
+.try-slack .start-btn {
+  color: #3D55DB;
+  background-color: white;
+}
+
+section.info-links {
+}
+
+.info-links-boxes {
+  display: grid;
+  grid-template-areas:
+    "box box"
+    "box box";
+}
+
+.slack-logo {
+  margin-bottom: 20px;
+}
+
+.info-links .box ul {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 13px;
+}
+
+.info-links .box li {
+  text-align: left;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.info-links .subtitle {
+  font-size: 15px;
+  color: #636363;
+}
+
+/* --- Footer --- */
+
+.extra-info li{
+  list-style-type: none;
+  padding: 7px;
+}
+
+.extra-info {
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+
+.language {
+  display: block;
+  text-align: center;
+  width: 65%;
+  margin: 10px auto 30px;
+  
+}
+
+.language select {
+  font-family: 'PT Serif';
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.social-media {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.social-media svg {
+  margin: 5px;
+}
+
+
+
+
