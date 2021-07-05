@@ -1,0 +1,71 @@
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-links li{
+  display: inline-block;
+}
+
+
+.flex {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+
+.home-illo{
+  max-width:100%;
+  height:auto;
+  max-height:100%;
+}
+
+.section2 .title h1{
+  text-align: center;
+}
+
+.section2 .title p{
+  text-align: center;
+}
+
+.section2 .container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.section2 .container .box{
+  width: 25vmax; 
+  height: 50px;
+  background-color: powderblue;
+}
+
+@media screen and (max-width: 1000px) {
+  
+  .flex {
+    flex-direction: column;
+  }
+  
+  .blog-text {
+    width: 100%;
+/*    margin: 0 auto;*/
+  }
+  
+  .home-illo{
+    width: 100%;
+/*    margin: 0 auto;*/
+  }
+  
+}
+
+
+
+
+
+
+
